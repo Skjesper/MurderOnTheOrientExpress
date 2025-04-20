@@ -1,4 +1,4 @@
-namespace OrientExpress.Game.ContentForScenes
+namespace OrientExpress.Game.ChapterContent
 {
     public static class StartScreenText
     {

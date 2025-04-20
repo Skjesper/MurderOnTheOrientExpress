@@ -1,13 +1,8 @@
-namespace OrientExpress.Game.ContentForScenes;
+namespace OrientExpress.Game.ChapterContent;
 
-public class FirstScene
+public class PrologText
 {
-    public static class GameIntro
-    {
-        public static void Show()
-        {
-            Console.Clear();
-            Console.WriteLine(@"
+    public static string GameIntro = @"
             The year is 1934.
 
             You are aboard the luxurious Orient Express, traveling from Istanbul to Calais.
@@ -24,11 +19,5 @@ public class FirstScene
             you have been asked to solve the murder before the train moves again.
 
             Everyone had a reason to want him dead.
-            ");
-
-            Console.WriteLine("\nPress any key to begin your investigation...");
-            Console.ReadKey();
-        }
-    }
-
+            ";
 }

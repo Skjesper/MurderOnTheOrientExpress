@@ -1,5 +1,5 @@
 using System;
-using OrientExpress.Game.Scenes;
+using OrientExpress.Game.Chapters;
 
 namespace OrientExpress
 {

@@ -1,7 +1,8 @@
 using System;
-using OrientExpress.Game.ContentForScenes;
+using OrientExpress.Game.ChapterContent; 
+using OrientExpress.Game.Chapters;
 
-namespace OrientExpress.Game.Scenes
+namespace OrientExpress.Game.Chapters
 {
     public class StartScreen
     {
@@ -23,9 +24,9 @@ namespace OrientExpress.Game.Scenes
                 {
                     case "1":
                         Console.Clear();
-                        Console.WriteLine("Starting game...");
-                        gameStarted = false; // Avsluta loopen för att gå vidare
-                        FirstScene.GameIntro.Show();
+                        Console.WriteLine("Starting the investigation...");
+                        gameStarted = false;
+                        Prolog.Play();
                         break;
 
                     case "2":
