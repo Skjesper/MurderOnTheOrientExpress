@@ -4,7 +4,7 @@ namespace OrientExpress.Game.ChapterContent
     {
         public static string Title = @"
             ====================================================
-                   🕵️‍♂️  MURDER ON THE ORIENT EXPRESS
+                        MURDER ON THE ORIENT EXPRESS
                      An Interactive Mystery Experience
             ====================================================";
 
@@ -26,5 +26,8 @@ namespace OrientExpress.Game.ChapterContent
             
         public static string PressAnyKey = @"
             Press any key to return to the main menu...";
+        
+        public static string Prompt = @"
+            Enter your choice:";
     }
 }

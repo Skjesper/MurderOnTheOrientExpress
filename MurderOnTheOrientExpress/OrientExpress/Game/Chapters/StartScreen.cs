@@ -15,8 +15,7 @@ namespace OrientExpress.Game.Chapters
                 Console.WriteLine(StartScreenText.Title);
                 Console.WriteLine(StartScreenText.Introduction);
                 Console.WriteLine(StartScreenText.Menu);
-
-                Console.Write("Enter your choice: ");
+                Console.WriteLine(StartScreenText.Prompt);
                 string? input = Console.ReadLine();
 
                 switch (input)
