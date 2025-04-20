@@ -1,16 +1,14 @@
-﻿using OrientExpress.Game.Chapters;
+﻿
+namespace OrientExpress.Game.Chapters;
 
 public class Chapter4
 {
     public static void Play()
     {
         Console.Clear();
-        Console.WriteLine("Chapter 4: The Truth");
-        Console.WriteLine("You gather everyone in the dining car.");
-        Console.WriteLine("You now must decide: who killed Samuel Ratchett?");
-        Console.WriteLine("[1] The conductor");
-        Console.WriteLine("[2] One of the passengers");
-        Console.WriteLine("[3] Everyone took part");
+        Console.WriteLine(ChapterContent.Chapter4.ChapterTitle);
+        Console.WriteLine(ChapterContent.Chapter4.ChapterDescription);
+        Console.WriteLine(ChapterContent.Chapter4.ChapterChoices);
 
         string finalChoice = Console.ReadLine();
 
@@ -19,26 +17,24 @@ public class Chapter4
         switch (finalChoice)
         {
             case "1":
-                Console.WriteLine("Incorrect. The conductor was hiding something, but he wasn’t the killer.");
+                Console.WriteLine(ChapterContent.Chapter4.Answers.ConductorChoice);
                 break;
             case "2":
-                Console.WriteLine("Partly true. But it’s more complex than that...");
+                Console.WriteLine(ChapterContent.Chapter4.Answers.PassengerChoice);
                 break;
             case "3":
-                Console.WriteLine("Correct. Each passenger had a motive and played a role in the murder.");
-                Console.WriteLine("It was justice, not murder. Ratchett was the gangster Cassetti, who ruined many lives.");
-                Console.WriteLine("And so, they planned the perfect revenge — together.");
+                Console.WriteLine(ChapterContent.Chapter4.Answers.EveryoneChoice);
                 break;
             default:
-                Console.WriteLine("Invalid choice.");
+                Console.WriteLine(ChapterContent.Chapter4.Messages.InvalidChoice);
+                Console.WriteLine("\n" + ChapterContent.Chapter4.Messages.PressAnyKey);
+                Console.ReadKey();
                 Play();
                 return;
         }
 
-        Console.WriteLine("\nThank you for playing.");
-        Console.WriteLine("Would you like to restart?");
-        Console.WriteLine("[1] Yes");
-        Console.WriteLine("[2] No");
+        Console.WriteLine("\n" + ChapterContent.Chapter4.Epilogue);
+        Console.WriteLine(ChapterContent.Chapter4.EpilogueChoices);
 
         string restart = Console.ReadLine();
         if (restart == "1")
@@ -47,9 +43,31 @@ public class Chapter4
             StartScreen startScreen = new StartScreen();
             startScreen.StartGame();
         }
+        else if (restart == "2")
+        {
+            Console.WriteLine(ChapterContent.Chapter4.Goodbye);
+        }
         else
         {
-            Console.WriteLine("Goodbye.");
+            Console.WriteLine(ChapterContent.Chapter4.Messages.InvalidChoice);
+            Console.WriteLine("\n" + ChapterContent.Chapter4.Messages.PressAnyKey);
+            Console.ReadKey();
+            
+            
+            Console.WriteLine("\n" + ChapterContent.Chapter4.Epilogue);
+            Console.WriteLine(ChapterContent.Chapter4.EpilogueChoices);
+            
+            restart = Console.ReadLine();
+            if (restart == "1")
+            {
+                Console.Clear();
+                StartScreen startScreen = new StartScreen();
+                startScreen.StartGame();
+            }
+            else
+            {
+                Console.WriteLine(ChapterContent.Chapter4.Goodbye);
+            }
         }
     }
 }

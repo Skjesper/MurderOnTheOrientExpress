@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using OrientExpress.Game.ChapterContent;
-using OrientExpress.Game.Chapters;
 
 namespace OrientExpress.Game.Chapters
 {
@@ -28,7 +24,9 @@ namespace OrientExpress.Game.Chapters
                     }
                     else
                     {
-                        Console.WriteLine("You have already examined the body.");
+                        Console.WriteLine(ChapterContent.Chapter1.ExamineBody.AlreadyExamined);
+                        Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                        Console.ReadKey();
                     }
                     break;
                 
@@ -40,7 +38,9 @@ namespace OrientExpress.Game.Chapters
                     }
                     else
                     {
-                        Console.WriteLine("You have already searched for clues.");
+                        Console.WriteLine(ChapterContent.Chapter1.LookForClues.AlreadySearched);
+                        Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                        Console.ReadKey();
                     }
                     break;
                 
@@ -52,12 +52,16 @@ namespace OrientExpress.Game.Chapters
                     }
                     else
                     {
-                        Console.WriteLine("You have already spoken to the conductor.");
+                        Console.WriteLine(ChapterContent.Chapter1.SpeakToConductor.AlreadySpoken);
+                        Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                        Console.ReadKey();
                     }
                     break;
                 
                 default:
-                    Console.WriteLine("Invalid choice. Please select a valid option.");
+                    Console.WriteLine(ChapterContent.Chapter1.Messages.InvalidChoice);
+                    Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                    Console.ReadKey();
                     Play();
                     break;
             }
@@ -75,28 +79,30 @@ namespace OrientExpress.Game.Chapters
         private static void ExamineBody()
         {
             Console.Clear();
-            Console.WriteLine("You kneel down beside the body of Samuel Ratchett.");
-            Console.WriteLine("He has been stabbed multiple times.");
-            Console.WriteLine("You find a note with some strange symbols on it.");
-            Console.WriteLine("What will you do?");
-            Console.WriteLine("[1] Pick up the note.");
-            Console.WriteLine("[2] Leave the note behind.");
+            Console.WriteLine(ChapterContent.Chapter1.ExamineBody.Description);
+            Console.WriteLine(ChapterContent.Chapter1.ExamineBody.Choices);
             
             string bodyChoice = Console.ReadLine();
             
             if (bodyChoice == "1")
             {
                 Console.Clear();
-                Console.WriteLine("You pick up the note, take a quick look, put it in your pocket, and leave the room.");
+                Console.WriteLine(ChapterContent.Chapter1.ExamineBody.PickUpNote);
+                Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                Console.ReadKey();
             }
             else if (bodyChoice == "2")
             {
                 Console.Clear();
-                Console.WriteLine("You leave the note behind and continue searching the room.");
+                Console.WriteLine(ChapterContent.Chapter1.ExamineBody.LeaveNote);
+                Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                Console.ReadKey();
             }
             else
             {
-                Console.WriteLine("Invalid choice. Please select a valid option.");
+                Console.WriteLine(ChapterContent.Chapter1.Messages.InvalidChoice);
+                Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                Console.ReadKey();
                 ExamineBody();
             }
         }
@@ -104,26 +110,30 @@ namespace OrientExpress.Game.Chapters
         private static void LookForClues()
         {
             Console.Clear();
-            Console.WriteLine("You start searching the room. The walls are covered in dark wood paneling, and there's a small writing desk.");
-            Console.WriteLine("You spot a broken window near the bed, as if someone tried to escape.");
-            Console.WriteLine("\nWhat will you do?");
-            Console.WriteLine("[1] Examine the window.");
-            Console.WriteLine("[2] Look at the writing desk.");
+            Console.WriteLine(ChapterContent.Chapter1.LookForClues.Description);
+            Console.WriteLine(ChapterContent.Chapter1.LookForClues.Choices);
 
             string clueChoice = Console.ReadLine();
 
             if (clueChoice == "1")
             {
-                Console.WriteLine("You approach the window. It's broken, but there's no sign of anyone escaping through it.");
-                Console.WriteLine("You find some footprints in the snow outside. Someone was likely here recently.");
+                Console.Clear();
+                Console.WriteLine(ChapterContent.Chapter1.LookForClues.ExamineWindow);
+                Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                Console.ReadKey();
             }
             else if (clueChoice == "2")
             {
-                Console.WriteLine("You open the desk drawer and find a hidden compartment. Inside is a locked envelope, but you can't open it without a key.");
+                Console.Clear();
+                Console.WriteLine(ChapterContent.Chapter1.LookForClues.ExamineDesk);
+                Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                Console.ReadKey();
             }
             else
             {
-                Console.WriteLine("Invalid choice. Please select a valid option.");
+                Console.WriteLine(ChapterContent.Chapter1.Messages.InvalidChoice);
+                Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                Console.ReadKey();
                 LookForClues();
             }
         }
@@ -131,25 +141,30 @@ namespace OrientExpress.Game.Chapters
         private static void SpeakToConductor()
         {
             Console.Clear();
-            Console.WriteLine("You step outside the room and find the conductor standing nearby.");
-            Console.WriteLine("He looks nervous, his eyes darting about as if he's trying to avoid suspicion.");
-            Console.WriteLine("\nWhat will you do?");
-            Console.WriteLine("[1] Ask him about the murder.");
-            Console.WriteLine("[2] Ask about the other passengers.");
+            Console.WriteLine(ChapterContent.Chapter1.SpeakToConductor.Description);
+            Console.WriteLine(ChapterContent.Chapter1.SpeakToConductor.Choices);
             
             string conductorChoice = Console.ReadLine();
 
             if (conductorChoice == "1")
             {
-                Console.WriteLine("The conductor looks uncomfortable. 'I... I didn't see anything,' he stammers. 'But I heard rumors...'");
+                Console.Clear();
+                Console.WriteLine(ChapterContent.Chapter1.SpeakToConductor.AskAboutMurder);
+                Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                Console.ReadKey();
             }
             else if (conductorChoice == "2")
             {
-                Console.WriteLine("The conductor hesitates. 'The passengers... they're all suspicious in their own way. Everyone has secrets.'");
+                Console.Clear();
+                Console.WriteLine(ChapterContent.Chapter1.SpeakToConductor.AskAboutPassengers);
+                Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                Console.ReadKey();
             }
             else
             {
-                Console.WriteLine("Invalid choice. Please select a valid option.");
+                Console.WriteLine(ChapterContent.Chapter1.Messages.InvalidChoice);
+                Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                Console.ReadKey();
                 SpeakToConductor();
             }
         }
@@ -157,17 +172,9 @@ namespace OrientExpress.Game.Chapters
         private static void ShowSummary()
         {
             Console.Clear();
-            Console.WriteLine("Chapter 1 Summary:");
-            Console.WriteLine("You have investigated the murder scene, spoken to the conductor, and searched for clues.");
-            Console.WriteLine("Here is what you have learned:");
-            Console.WriteLine("- The victim was stabbed multiple times.");
-            Console.WriteLine("- A strange note with symbols was found on the body.");
-            Console.WriteLine("- Footprints outside the broken window suggest someone was here recently.");
-            Console.WriteLine("- The conductor is nervous and seems to know something, but isn't revealing much.");
-            Console.WriteLine("\nNow, you're ready to move on to the next chapter.");
+            Console.WriteLine(ChapterContent.Chapter1.ChapterSummary);
             
-            Console.WriteLine("[1] Continue with chapter 2");
-            Console.WriteLine("[2] Exit");
+            Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.NextChapterChoices);
             
             string summaryChoice = Console.ReadLine();
             
@@ -178,12 +185,14 @@ namespace OrientExpress.Game.Chapters
             }
             else if (summaryChoice == "2")
             {
-                Console.WriteLine("Thanks for playing!");
+                Console.WriteLine(ChapterContent.Chapter1.Messages.ThanksForPlaying);
                 Environment.Exit(0);
             }
             else
             {
-                Console.WriteLine("Invalid choice. Please select a valid option.");
+                Console.WriteLine(ChapterContent.Chapter1.Messages.InvalidChoice);
+                Console.WriteLine("\n" + ChapterContent.Chapter1.Messages.PressAnyKey);
+                Console.ReadKey();
                 ShowSummary(); 
             }
         }

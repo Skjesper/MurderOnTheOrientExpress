@@ -1,5 +1,6 @@
-
+using System;
 using OrientExpress.Game.ChapterContent; 
+using OrientExpress.Game.Chapters;
 
 namespace OrientExpress.Game.Chapters
 {
@@ -48,11 +49,8 @@ namespace OrientExpress.Game.Chapters
         private void ShowInstructions()
         {
             Console.Clear();
-            Console.WriteLine("=== How to Play ===");
-            Console.WriteLine("- Use numbers to choose actions.");
-            Console.WriteLine("- Investigate scenes, question suspects, collect clues.");
-            Console.WriteLine("- Make the right deductions to solve the mystery.");
-            Console.WriteLine("\nPress any key to return to the main menu...");
+            Console.WriteLine(StartScreenText.HowToPlay);
+            Console.WriteLine("\n" + StartScreenText.PressAnyKey);
             Console.ReadKey();
         }
     }

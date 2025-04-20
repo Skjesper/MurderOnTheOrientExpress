@@ -7,6 +7,7 @@ namespace OrientExpress
     {
         static void Main(string[] args)
         {
+            Console.Clear();
             StartScreen startScreen = new StartScreen();
             startScreen.StartGame();
             
