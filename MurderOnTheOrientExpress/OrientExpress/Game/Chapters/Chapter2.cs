@@ -1,16 +1,19 @@
-﻿public class Chapter2
+﻿using System;
+using System.Collections.Generic;
+using OrientExpress.Game.ChapterContent;
+using OrientExpress.Game.Chapters;
+
+namespace OrientExpress.Game.Chapters;
+
+public class Chapter2
 {
     private static HashSet<string> playerChoices = new HashSet<string>();
 
     public static void Play()
     {
         Console.Clear();
-        Console.WriteLine("Chapter 2: The Passengers");
-        Console.WriteLine("You begin questioning the passengers. Each one has a different story.");
-        Console.WriteLine("Who would you like to talk to?");
-        Console.WriteLine("[1] The Countess Elena Andrenyi");
-        Console.WriteLine("[2] Colonel Arbuthnot");
-        Console.WriteLine("[3] Miss Mary Debenham");
+        Console.WriteLine(ChapterContent.Chapter2.ChapterDescription);
+        Console.WriteLine(ChapterContent.Chapter2.ChapterChoices);
 
         string choice = Console.ReadLine();
 

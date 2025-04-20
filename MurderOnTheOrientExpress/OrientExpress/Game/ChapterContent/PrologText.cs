@@ -19,5 +19,7 @@ public class PrologText
             you have been asked to solve the murder before the train moves again.
 
             Everyone had a reason to want him dead.
+
+            Press any key to begin..
             ";
 }

@@ -6,7 +6,6 @@ public class Prolog
     {
         Console.Clear();
         Console.WriteLine(ChapterContent.PrologText.GameIntro); 
-        Console.WriteLine("Press any key to begin..");
         Console.ReadKey();
         Chapter1.Play();
         

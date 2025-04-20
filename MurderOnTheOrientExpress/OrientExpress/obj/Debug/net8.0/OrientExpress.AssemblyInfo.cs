@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrientExpress")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4e64e23214d9282e347921990d0d0ffb8bd31b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e0cb9a6d8d86cf75333b0cb9177be1c2311b56c")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrientExpress")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrientExpress")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
