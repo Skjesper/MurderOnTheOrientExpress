@@ -14,5 +14,3 @@ Interview passengers, examine the crime scene, and piece together clues to uncov
 
 Ive used ChatGPT to help with creating the actual content from the book.
 
-##
-
