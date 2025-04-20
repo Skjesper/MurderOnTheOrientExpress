@@ -9,13 +9,13 @@ namespace OrientExpress.Game.ChapterContent
 ====================================================";
 
         public static string Introduction => @"
-The year is 1934.
-A murder has taken place aboard the Orient Express.
-You are Hercule Poirot, and the truth awaits.";
+        The year is 1934.
+        A murder has taken place aboard the Orient Express.
+        You are Hercule Poirot, and the truth awaits.";
 
         public static string Menu => @"
-[1] Start Game
-[2] How to Play
-[3] Exit";
+        [1] Start Game
+        [2] How to Play
+        [3] Exit";
     }
 }

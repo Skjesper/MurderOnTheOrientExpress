@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/jskepp/.nuget/packages/": {}
+    "C:\\Users\\Jesper\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jskepp/Documents/GitHub/MurderOnTheOrientExpress/MurderOnTheOrientExpress/OrientExpress/OrientExpress.csproj",
+      "projectUniqueName": "C:\\Users\\Jesper\\Documents\\GitHub\\MurderOnTheOrientExpress\\MurderOnTheOrientExpress\\OrientExpress\\OrientExpress.csproj",
       "projectName": "OrientExpress",
-      "projectPath": "/Users/jskepp/Documents/GitHub/MurderOnTheOrientExpress/MurderOnTheOrientExpress/OrientExpress/OrientExpress.csproj",
-      "packagesPath": "/Users/jskepp/.nuget/packages/",
-      "outputPath": "/Users/jskepp/Documents/GitHub/MurderOnTheOrientExpress/MurderOnTheOrientExpress/OrientExpress/obj/",
+      "projectPath": "C:\\Users\\Jesper\\Documents\\GitHub\\MurderOnTheOrientExpress\\MurderOnTheOrientExpress\\OrientExpress\\OrientExpress.csproj",
+      "packagesPath": "C:\\Users\\Jesper\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jesper\\Documents\\GitHub\\MurderOnTheOrientExpress\\MurderOnTheOrientExpress\\OrientExpress\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/jskepp/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Jesper\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/jskepp/.dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Jesper\\.dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

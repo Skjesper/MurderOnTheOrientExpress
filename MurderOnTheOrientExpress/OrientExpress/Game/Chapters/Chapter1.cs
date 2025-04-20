@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using OrientExpress.Game.ChapterContent;
+using OrientExpress.Game.Chapters;
 
 namespace OrientExpress.Game.Chapters
 {
@@ -164,6 +165,27 @@ namespace OrientExpress.Game.Chapters
             Console.WriteLine("- Footprints outside the broken window suggest someone was here recently.");
             Console.WriteLine("- The conductor is nervous and seems to know something, but isn't revealing much.");
             Console.WriteLine("\nNow, you're ready to move on to the next chapter.");
+            
+            Console.WriteLine("[1] Continue with chapter 2");
+            Console.WriteLine("[2] Exit");
+            
+            string summaryChoice = Console.ReadLine();
+            
+            if (summaryChoice == "1")
+            {
+                Console.Clear();
+                Chapter2.Play(); 
+            }
+            else if (summaryChoice == "2")
+            {
+                Console.WriteLine("Thanks for playing!");
+                Environment.Exit(0);
+            }
+            else
+            {
+                Console.WriteLine("Invalid choice. Please select a valid option.");
+                ShowSummary(); 
+            }
         }
     }
 }
