@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using OrientExpress.Game.ChapterContent;
-using OrientExpress.Game.Chapters;
-
+﻿
 namespace OrientExpress.Game.Chapters;
 
 public class Chapter2

@@ -30,8 +30,7 @@ public static class Chapter3
             
     public static string ChapterSummary = @"
             You feel you're getting closer to the truth.";
-            
-    // Gemensamma meddelanden
+    
     public static class Messages
     {
         public static string InvalidChoice = @"

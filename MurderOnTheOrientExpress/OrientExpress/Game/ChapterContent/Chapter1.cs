@@ -32,8 +32,7 @@ public static class Chapter1
             - The conductor is nervous and seems to know something, but isn't revealing much.
 
             Now, you're ready to move on to the next chapter.";
-
-    // ExamineBody avsnitt
+    
     public static class ExamineBody
     {
         public static string Description = @"
@@ -56,7 +55,6 @@ public static class Chapter1
             You have already examined the body.";
     }
     
-    // LookForClues avsnitt
     public static class LookForClues
     {
         public static string Description = @"
@@ -79,7 +77,6 @@ public static class Chapter1
             You have already searched for clues.";
     }
     
-    // SpeakToConductor avsnitt
     public static class SpeakToConductor
     {
         public static string Description = @"
@@ -101,7 +98,6 @@ public static class Chapter1
             You have already spoken to the conductor.";
     }
     
-    // Gemensamma meddelanden
     public static class Messages
     {
         public static string InvalidChoice = @"

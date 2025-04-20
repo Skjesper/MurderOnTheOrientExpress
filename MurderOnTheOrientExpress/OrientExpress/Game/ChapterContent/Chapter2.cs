@@ -19,8 +19,7 @@ public static class Chapter2
     public static string ChapterSummary = @"
             You've spoken to all passengers. Some stories don't quite add up.
             You begin to sense that the truth is hidden beneath layers of lies.";
-
-    // TalkToCountess avsnitt
+    
     public static class Countess
     {
         public static string Description = @"
@@ -31,7 +30,6 @@ public static class Chapter2
             You have already spoken to the Countess.";
     }
     
-    // TalkToColonel avsnitt
     public static class Colonel
     {
         public static string Description = @"
@@ -41,7 +39,6 @@ public static class Chapter2
             You have already spoken to the Colonel.";
     }
     
-    // TalkToMary avsnitt
     public static class Mary
     {
         public static string Description = @"
@@ -51,7 +48,6 @@ public static class Chapter2
             You have already spoken to Mary.";
     }
     
-    // Gemensamma meddelanden
     public static class Messages
     {
         public static string InvalidChoice = @"
