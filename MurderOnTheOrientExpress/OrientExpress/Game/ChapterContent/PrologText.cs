@@ -2,7 +2,7 @@ namespace OrientExpress.Game.ChapterContent;
 
 public class PrologText
 {
-    public static string GameIntro = @"
+    public static readonly string GameIntro = @"
             The year is 1934.
 
             You are aboard the luxurious Orient Express, traveling from Istanbul to Calais.
