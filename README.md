@@ -14,3 +14,6 @@ Interview passengers, examine the crime scene, and piece together clues to uncov
 
 Ive used ChatGPT to help with creating the actual content from the book.
 
+## Future development
+
+Add more chapters and more complexity in the actual gameplay.
